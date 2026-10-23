@@ -5,56 +5,62 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public float timeLeft = 30f;
-    public int winScore = 6;
-    public ScoreZone zone;
-    public TMP_Text timerText;
     public GameObject endPanel;
     public TMP_Text endText;
     public bool gameOver = false;
 
     void Start()
     {
-        endPanel.SetActive(false);
+        gameOver = false;
+
+        if (endPanel != null)
+        {
+            endPanel.SetActive(false);
+        }
+        else
+        {
+            Debug.LogError("EndPanel is not assigned.", this);
+        }
+
+        if (endText == null)
+        {
+            Debug.LogError("EndText is not assigned.", this);
+        }
     }
 
     void Update()
     {
-        if (gameOver)
+        if (!gameOver)
         {
-            if (Keyboard.current.rKey.wasPressedThisFrame)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
             return;
         }
 
-        timeLeft = timeLeft - Time.deltaTime;
-        if (timeLeft < 0f)
+        if (Keyboard.current != null &&
+            Keyboard.current.rKey.wasPressedThisFrame)
         {
-            timeLeft = 0f;
-        }
-        timerText.text = "Time: " + Mathf.CeilToInt(timeLeft);
-
-        if (timeLeft <= 10f)
-        {
-            timerText.color = Color.red;
-        }
-
-        if (zone.knockedDown >= winScore)
-        {
-            EndGame("YOU WIN!");
-        }
-        else if (timeLeft <= 0f)
-        {
-            EndGame("TIME'S UP!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
-    void EndGame(string message)
+    public void EndGame(string message)
     {
+        if (gameOver)
+        {
+            return;
+        }
+
         gameOver = true;
-        endText.text = message + "\nPress R to restart";
-        endPanel.SetActive(true);
+
+        if (endText != null)
+        {
+            endText.text = message + "\nPress R to restart";
+        }
+
+        if (endPanel != null)
+        {
+            endPanel.SetActive(true);
+        }
+
+        Debug.Log(message);
     }
 }
