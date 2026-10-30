@@ -3206,7 +3206,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -3595,7 +3595,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300000022}
-  m_Mesh: {fileID: -241394466, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
+  m_Mesh: {fileID: -1434947938634123512, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
 --- !u!23 &300000025
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3700,7 +3700,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300000027}
-  m_Mesh: {fileID: -241394466, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
+  m_Mesh: {fileID: -1434947938634123512, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
 --- !u!23 &300000030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3805,7 +3805,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300000032}
-  m_Mesh: {fileID: -241394466, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
+  m_Mesh: {fileID: -1434947938634123512, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
 --- !u!23 &300000035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3910,7 +3910,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300000037}
-  m_Mesh: {fileID: -241394466, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
+  m_Mesh: {fileID: -1434947938634123512, guid: b20724a08f404bd39c6b09fbda4028b2, type: 3}
 --- !u!23 &300000040
 MeshRenderer:
   m_ObjectHideFlags: 0
