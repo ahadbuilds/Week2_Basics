@@ -1,0 +1,8 @@
+Project: Week2_Basics
+Course: CSC391 - Game Development (Semester 7)
+
+Assets & Attribution:
+- Pillar Model (Pillar.obj): Procedural Classical Column mesh created for Week 7 greybox and architectural testing. (License: CC0 Public Domain)
+- Pillar Texture (Pillar_Albedo.png): Handcrafted limestone/sandstone albedo texture. (License: CC0 Public Domain)
+- Trees (Tree.prefab): Primitive-based stylized tree model (trunk cylinder + foliage sphere). (License: CC0 Public Domain)
+- Terrain Textures / Layers: Procedural terrain splat layers. (License: CC0 Public Domain)
